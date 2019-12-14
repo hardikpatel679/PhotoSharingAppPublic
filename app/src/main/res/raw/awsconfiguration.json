@@ -1,0 +1,38 @@
+{
+  "UserAgent": "MobileHub/1.0",
+  "Version": "1.0",
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+        "PoolId": "us-west-2:46a729f1-9dc5-4342-90f5-a9a35d468b6f",
+        "Region": "us-west-2"
+      }
+    }
+  },
+  "IdentityManager": {
+    "Default": {}
+  },
+  "S3TransferUtility": {
+    "Default": {
+      "Bucket": "photosharingapp1",
+      "Region": "us-west-2"
+    }
+  },
+  "PinpointAnalytics": {
+    "Default": {
+      "AppId": "7a29a49421c94101a79505df39cee385",
+      "Region": "us-west-2"
+    }
+  },
+  "PinpointTargeting": {
+    "Default": {
+      "Region": "us-west-2"
+    }
+  },
+  "UserFileManager": {
+    "Default": {
+      "Bucket": "photosharingapp1",
+      "Region": "us-we-1"
+    }
+  }
+}

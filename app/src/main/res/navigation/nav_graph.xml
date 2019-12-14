@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/friendsListFragment">
+
+    <fragment
+        android:id="@+id/friendsListFragment"
+        android:name="com.photo.sharing.fragments.FriendsListFragment"
+        android:label="fragment_friends_list"
+        tools:layout="@layout/fragment_friends_list">
+
+        <action
+            android:id="@+id/action_friendsListFragment_to_sharedImagesFragment"
+            app:destination="@id/sharedImagesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sharedImagesFragment"
+        android:name="com.photo.sharing.fragments.SharedImagesFragment"
+        android:label="fragment_shared_images"
+        tools:layout="@layout/fragment_shared_images">
+        <argument
+            android:name="userId"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <argument
+            android:name="friendId"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
+</navigation>
